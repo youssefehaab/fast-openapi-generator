@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.chesterford</groupId>
+    <artifactId>fast-openapi-generator</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/youssefehaab/fast-openapi-generator</url>
+        </repository>
+    </distributionManagement>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <name>Fast OpenAPI Spring Generator</name>
+    <description>Customized Spring generator for OpenAPI Generator</description>
+    <url>https://github.com/youssefehaab/fast-openapi-generator</url>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <openapi-generator.version>7.11.0</openapi-generator.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.openapitools</groupId>
+            <artifactId>openapi-generator</artifactId>
+            <version>${openapi-generator.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
