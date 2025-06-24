@@ -31,6 +31,18 @@ This custom generator:
 In your consumer project (`pom.xml`):
 
 ```xml
+.
+.
+.
+<pluginRepositories>
+  <pluginRepository>
+    <id>github</id>
+    <url>https://maven.pkg.github.com/youssefehaab/fast-openapi-generator</url>
+  </pluginRepository>
+</pluginRepositories>
+.
+.
+.
 <plugin>
   <groupId>org.openapitools</groupId>
   <artifactId>openapi-generator-maven-plugin</artifactId>
